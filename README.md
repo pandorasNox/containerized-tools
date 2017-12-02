@@ -1,12 +1,18 @@
 # dockerized-tools
 
-Collection of dockerized tools (tools whicht are running in in an docker container).
+Collection of indipendend tools which are encapsulated into a docker containers.
 
 ## Why?
 Out there are a lot of build, task, bootstrapping and other tools.
 I like all these tools but you find yourself use some of them extream rarely.
 Even so rarely that you may just forget about them and that you installed a lot on your system.
 So why not use docker and it's ability for auto removable containers to contain these tools.
+
+## Advantages
+- keeps your system clean
+
+## Disatvantage
+- wraps all tools around docker => adds a layer of complexity
 
 ## How to
 0. You know docker and how to use it

@@ -1,6 +1,6 @@
-FROM node:6.11.4-alpine
+FROM node:8.9.1-alpine
 
-RUN npm install -g create-react-native-app@0.0.6
+RUN npm install -g create-react-native-app@1.0.0
 
 COPY ./entrypoint.sh /
 RUN chmod +x entrypoint.sh

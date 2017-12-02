@@ -1,6 +1,6 @@
-FROM node:6.11.4-alpine
+FROM node:8.9.1-alpine
 
-RUN npm install -g gatsby-cli@1.1.20
+RUN npm install -g gatsby-cli@1.1.25
 
 EXPOSE 8000
 
