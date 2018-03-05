@@ -1,3 +1,4 @@
+
 # gatsby
 
 ## how to use
@@ -13,4 +14,8 @@
 ## development
 In order to run the development command you have to add the `-H` flag and specify `0.0.0.0` as host, bec there is a a port mapping problem with webpack
 
-command: `docker run -it --rm -p "8978:8000" -v $(pwd):/temp gatsby develop -H 0.0.0.0`
+Also HMR is only working if you are using the same ports in docker and in gatsby (e.g. for docker add: -p 8978:8978 and for gatsby add: -p 8978)
+
+command: `docker run -it --rm -p 8978:8978 -v $(pwd):/temp gatsby develop -p 8978 -H 0.0.0.0`
+
+if your port 8000 is free the docker port part with `-p 8000:8000` is enough
