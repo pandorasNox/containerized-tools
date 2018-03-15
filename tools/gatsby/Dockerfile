@@ -1,6 +1,6 @@
 FROM node:8.9.1-alpine
 
-RUN npm install -g gatsby-cli@1.1.25
+RUN npm install -g gatsby-cli@1.1.45
 
 RUN apk --update add git openssh && \
     rm -rf /var/lib/apt/lists/* && \
