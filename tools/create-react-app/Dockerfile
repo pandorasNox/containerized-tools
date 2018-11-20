@@ -1,6 +1,6 @@
-FROM node:8.10.0-alpine
+FROM node:10.13.0-alpine
 
-RUN npm install -g create-react-app@1.5.2
+RUN npm install -g create-react-app@2.1.1
 
 COPY ./entrypoint.sh /
 RUN chmod +x entrypoint.sh
