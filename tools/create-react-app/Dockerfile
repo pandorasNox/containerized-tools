@@ -1,4 +1,4 @@
-FROM node:10.13.0-alpine
+FROM node:10.14.2-alpine
 
 RUN npm install -g create-react-app@2.1.1
 

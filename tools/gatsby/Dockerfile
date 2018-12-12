@@ -1,4 +1,4 @@
-FROM node:8.9.1-alpine
+FROM node:10.14.2-alpine
 
 RUN npm install -g gatsby-cli@1.1.45
 

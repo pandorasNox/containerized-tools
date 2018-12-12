@@ -1,4 +1,4 @@
-FROM node:8.9.1-alpine
+FROM node:10.14.2-alpine
 
 RUN npm install -g create-react-native-app@1.0.0
 

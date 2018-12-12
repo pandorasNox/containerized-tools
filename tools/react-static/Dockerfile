@@ -1,4 +1,4 @@
-FROM node:8.10.0-alpine
+FROM node:10.14.2-alpine
 
 RUN npm install -g react-static@5.6.1
 
