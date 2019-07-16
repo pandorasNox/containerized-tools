@@ -1,6 +1,6 @@
-# dockerized-tools
+# containerize-tools
 
-Collection of indipendend tools which are encapsulated into a docker containers.
+Collection of indipendend tools which are encapsulated into a (docker) container.
 
 ## Why?
 Out there are a lot of build, task, bootstrapping and other tools.
