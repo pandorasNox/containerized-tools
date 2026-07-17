@@ -24,8 +24,8 @@ echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 
 ARCH_OVERRIDE="${1:-}"
 
-if [ -n "$ARCH_OVERRIDE" ]; then
-    PLATFORM="$ARCH_OVERRIDE"
+if [ -n "${ARCH_OVERRIDE}" ]; then
+    PLATFORM="${ARCH_OVERRIDE}"
 else
     case "$(uname -m)" in
         x86_64) PLATFORM="linux/amd64" ;;
@@ -34,8 +34,8 @@ else
     esac
 fi
 
-echo "Building for $PLATFORM"
+echo "Building for ${PLATFORM}"
 
-docker build --no-cache -f "${SCRIPT_DIR}/Containerfile" -t local-opencode "${SCRIPT_DIR}"
+docker build -f "${SCRIPT_DIR}/Containerfile" -t local-opencode "${SCRIPT_DIR}"
 
 # -----------------------------------------------------------------------------
