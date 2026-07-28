@@ -28,7 +28,7 @@ echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 #
 # .local/state
 # ```
-$ opencode
+# $ opencode
 # EACCES: permission denied, mkdir '/home/opencode/.local/state'
 #     path: "/home/opencode/.local/state",
 #  syscall: "mkdir",
